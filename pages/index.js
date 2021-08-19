@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
+import "./_app.js"
 //import styles from '../styles/Home.module.css'
 
 
