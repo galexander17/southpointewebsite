@@ -112,6 +112,7 @@ class Home extends React.Component {
           </div>
         </div>
         {/*-----END CONTACT DIV-----*/}
+        {/*-----END CONTACT DIV-----*/}
         <footer>
         </footer>
       </div>
