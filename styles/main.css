@@ -1,28 +1,53 @@
-/*-----div styling-----*/
+/*-----CONTAINER STYLING (MAIN DIVS/SECTIONS OF PAGE)-----*/
+* {
+    border: 1px solid red;
+}
 .home-container, .music-container, .club-container, .contact-container {
     height: 1080px;
-    width: 1920px;
+    width: auto;
     background-image: url("/continuum-tower.png");
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.home-container-b {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+.music-container {
+    background-image: url("/saltwater-baptism-mask.png");
+    background-size: 75%;
+    background-position: center;
+}
+.club-container {
+    background-image: url("/miami-beach-lifeguard-tower-final.png");
+}
+.contact-container {
+    background-image: url("/saltwater.png");
+}
+/*-----WRAPPER STYLING (DIVS USED TO ALIGN/FORMAT CONTENT WITHIN CONTAINERS)-----*/
 .home-navbar-wrapper, .music-navbar-wrapper, .club-navbar-wrapper, .contact-navbar-wrapper {
     height: 25vh;
-	width: 100vw;
+	width: auto;
 	display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 0px;
     padding: 35px;
 }
 .music-description-wrapper, .club-content-wrapper {
-    height: 25%;
-    width: 100%;
+    height: 90vh;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .club-content-outer-wrapper, .contact-content-outer-wrapper {
     height: 75%;
-    width: 100vw;
+    width: auto;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -45,17 +70,7 @@
     margin-bottom: 15%;
     margin-left: 10%;
 }
-.music-container {
-    background-image: none;
-    background: white;
-}
-.club-container {
-    background-image: url("/miami-beach-lifeguard-tower-final.png");
-}
-.contact-container {
-    background-image: url("/saltwater.png");
-}
-/*-----Individual Elements-----*/
+/*-----IMAGES STYLING-----*/
 #logo {
     height: 125px;
     width: 125px;
@@ -68,7 +83,7 @@
 }
 .navbar, .music-navbar, .club-navbar, .contact-navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     height: 40%;
   }
@@ -111,12 +126,19 @@
 .nav-link-ltr:hover::before, .music-nav-link-ltr:hover::before {
     width: 100%;
   }
-.description, .music-description, .club-description, .contact-description {
+.home-description {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+.music-description, .club-description, .contact-description {
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
     transform: translateY(300px);
     margin-left: 100px;
+    margin-top: 0;
     width: 40%;
 }
 .music-description {
