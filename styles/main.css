@@ -1,6 +1,6 @@
 /*-----CONTAINER STYLING (MAIN DIVS/SECTIONS OF PAGE)-----*/
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .home-container, .music-container, .club-container, .contact-container {
     height: 1080px;

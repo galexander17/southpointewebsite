@@ -59,7 +59,7 @@ class Home extends React.Component {
           </div>
           <div className="music-description-wrapper">
             <p className="music-description">
-              <center><b>TESTING TESTING TESTING</b></center>
+              <center><b>SINGLE DEBUT COMING SOON</b></center>
             </p>
           </div>
         </div>
