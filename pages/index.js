@@ -11,7 +11,7 @@ class Home extends React.Component {
     document.getElementsByClassName('description')[0].innerHTML = "test successful!";
     console.log('hello');
   }
-
+  
   render() {
     return (
       <div className="main">
@@ -22,11 +22,7 @@ class Home extends React.Component {
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
           <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet"></link>
-          <link rel="preconnect" href="https://fonts.googleapis.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"></link>
-          <link rel="preconnect" href="https://fonts.googleapis.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"></link>
         </Head>
         {/*-----START HOME DIV-----*/}
