@@ -14,14 +14,14 @@
     display: flex;
     width: 100%;
     max-width: 1920px;
+    margin-bottom: auto;
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
 }
 .music-container {
-    background-image: url("/saltwater-baptism-mask.png");
-    background-size: 75%;
-    background-position: center;
+    background-image: none;
+    background-color: white;
 }
 .club-container {
     background-image: url("/miami-beach-lifeguard-tower-final.png");
@@ -31,19 +31,25 @@
 }
 /*-----WRAPPER STYLING (DIVS USED TO ALIGN/FORMAT CONTENT WITHIN CONTAINERS)-----*/
 .home-navbar-wrapper, .music-navbar-wrapper, .club-navbar-wrapper, .contact-navbar-wrapper {
-    height: 25vh;
+    height: 20%;
 	width: auto;
 	display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 0px;
-    padding: 35px;
+    padding: 0px;
 }
 .music-description-wrapper, .club-content-wrapper {
-    height: 90vh;
-    width: auto;
+    position: relative;
     display: flex;
+    width: 100%;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .club-content-outer-wrapper, .contact-content-outer-wrapper {
     height: 75%;
@@ -76,10 +82,6 @@
     width: 125px;
     margin-left: 50px;
     margin-top: 20px;
-}
-#music-img {
-    max-width: 100%;
-    height: auto;
 }
 .navbar, .music-navbar, .club-navbar, .contact-navbar {
     display: flex;
@@ -130,6 +132,9 @@
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 20%;
 }
 
 .music-description, .club-description, .contact-description {
@@ -142,11 +147,29 @@
     width: 40%;
 }
 .music-description {
-    font-size: 50px;
+    background:url('/saltwater.png') no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 500%;
     color: #2B6271;
     transform: none;
     margin-left: 0px;
-    width: 40%;
+    width: 75%;
+}
+.music-title {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 2000%;
+    font-weight: 700;
+    margin-bottom: 5%;
+    line-height: 100%;
+    background:url('/saltwater.png') ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-attachment: fixed;
 }
 .club-description, .contact-description {
     transform: none;

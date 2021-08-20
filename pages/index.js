@@ -21,9 +21,7 @@ class Home extends React.Component {
           <link rel="icon" href="/south-pointe-logo-white-trans.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet"></link>
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"></link>
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700,900" rel="stylesheet"/> 
         </Head>
         {/*-----START HOME DIV-----*/}
         <div className="home-container">
@@ -58,6 +56,9 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="music-description-wrapper">
+            <div className="music-title">
+              <center><b>SALTWATER<br></br>BAPTISM</b></center>
+            </div>
             <p className="music-description">
               <center><b>SINGLE DEBUT COMING SOON</b></center>
             </p>
