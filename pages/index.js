@@ -24,14 +24,14 @@ class Home extends React.Component {
           <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700,900" rel="stylesheet"/> 
         </Head>
         {/*-----START HOME DIV-----*/}
-        <div className="home-container">
+        <div className="home-container" name="home" id="home">
           <div className="home-navbar-wrapper">
             <img src='/south-pointe-logo-white-trans.png' id='logo'></img>
             <div className="navbar">
-              <a className="nav-link nav-link-ltr" href="#">HOME</a>
-              <a className="nav-link nav-link-ltr" href="#">MUSIC</a>
-              <a className="nav-link nav-link-ltr" href="#">CLUB</a>
-              <a className="nav-link nav-link-ltr" href="#">CONTACT</a>
+              <a className="nav-link nav-link-ltr" href="#home">HOME</a>
+              <a className="nav-link nav-link-ltr" href="#music">MUSIC</a>
+              <a className="nav-link nav-link-ltr" href="#club">CLUB</a>
+              <a className="nav-link nav-link-ltr" href="#contact">CONTACT</a>
             </div>
             {/*<button type="button" className="button" onClick={e => this.buttonClick()}>TEST</button>*/}
           </div>
@@ -46,13 +46,13 @@ class Home extends React.Component {
         </div>
         {/*-----END HOME DIV-----*/}
         {/*-----START MUSIC DIV-----*/}
-        <div className="music-container">
+        <div className="music-container" name="music" id="music">
           <div className="music-navbar-wrapper">
             <div className="music-navbar">
-              <a className="music-nav-link music-nav-link-ltr" href="#">HOME</a>
-              <a className="music-nav-link music-nav-link-ltr" href="#">MUSIC</a>
-              <a className="music-nav-link music-nav-link-ltr" href="#">CLUB</a>
-              <a className="music-nav-link music-nav-link-ltr" href="#">CONTACT</a>
+              <a className="music-nav-link music-nav-link-ltr" href="#home">HOME</a>
+              <a className="music-nav-link music-nav-link-ltr" href="#music">MUSIC</a>
+              <a className="music-nav-link music-nav-link-ltr" href="#club">CLUB</a>
+              <a className="music-nav-link music-nav-link-ltr" href="#contact">CONTACT</a>
             </div>
           </div>
           <div className="music-description-wrapper">
@@ -66,13 +66,13 @@ class Home extends React.Component {
         </div>
         {/*-----END MUSIC DIV-----*/}
         {/*-----START CLUB DIV-----*/}
-        <div className="club-container">
+        <div className="club-container" name="club" id="club">
           <div className="club-navbar-wrapper">
             <div className="club-navbar">
-              <a className="nav-link nav-link-ltr" href="#">HOME</a>
-              <a className="nav-link nav-link-ltr" href="#">MUSIC</a>
-              <a className="nav-link nav-link-ltr" href="#">CLUB</a>
-              <a className="nav-link nav-link-ltr" href="#">CONTACT</a>
+              <a className="nav-link nav-link-ltr" href="#home">HOME</a>
+              <a className="nav-link nav-link-ltr" href="#music">MUSIC</a>
+              <a className="nav-link nav-link-ltr" href="#club">CLUB</a>
+              <a className="nav-link nav-link-ltr" href="#contact">CONTACT</a>
             </div>
           </div>
           <div className="club-content-outer-wrapper">
@@ -80,20 +80,20 @@ class Home extends React.Component {
               <div className="club-title"><b>JOIN THE CLUB</b></div>
               <p className="club-description">Join our fan club for special VIP<br></br>perks, exclusive
                 music releases,<br></br>content, and access with the band!</p>
-              <input className="club-textbox" type="text" id="clubSubmit" name="userEmail" placeholder="E-MAIL"></input>
+              <input className="club-textbox" type="text" name="userEmail" placeholder="E-MAIL"></input>
               <button type="button" className="emailSubmit" onClick={e => this.emailSubmit()}>SUBMIT</button>
             </div>
           </div>
         </div>
         {/*-----END CLUB DIV-----*/}
         {/*-----START CONTACT DIV-----*/}
-        <div className="contact-container">
+        <div className="contact-container" name="contact" id="contact">
           <div className="contact-navbar-wrapper">
             <div className="contact-navbar">
-              <a className="nav-link nav-link-ltr" href="#">HOME</a>
-              <a className="nav-link nav-link-ltr" href="#">MUSIC</a>
-              <a className="nav-link nav-link-ltr" href="#">CLUB</a>
-              <a className="nav-link nav-link-ltr" href="#">CONTACT</a>
+              <a className="nav-link nav-link-ltr" href="#home">HOME</a>
+              <a className="nav-link nav-link-ltr" href="#music">MUSIC</a>
+              <a className="nav-link nav-link-ltr" href="#club">CLUB</a>
+              <a className="nav-link nav-link-ltr" href="#contact">CONTACT</a>
             </div>
           </div>
           <div className="contact-content-outer-wrapper">
